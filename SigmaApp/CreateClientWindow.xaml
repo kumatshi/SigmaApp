@@ -1,0 +1,20 @@
+﻿<Window x:Class="SigmaApp.CreateClientWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Добавить заказчика" Height="400" Width="500"
+        WindowStartupLocation="CenterOwner" Background="#FF561C24">
+    <Grid Margin="20">
+        <StackPanel>
+            <TextBlock Text="Имя заказчика" FontWeight="Bold" Foreground="#E8DBC4" Margin="0,10,0,5"/>
+            <TextBox Name="ClientNameTextBox" Height="30" Background="#E8DBC4"/>
+
+            <TextBlock Text="ID Заказа" FontWeight="Bold" Foreground="#E8DBC4" Margin="0,10,0,5"/>
+            <TextBox Name="OrderIdTextBox" Height="30" Background="#E8DBC4"/>
+
+            <TextBlock Text="Контактная информация" FontWeight="Bold" Foreground="#E8DBC4" Margin="0,10,0,5"/>
+            <TextBox Name="ContactInfoTextBox" Height="60" Background="#E8DBC4" TextWrapping="Wrap" AcceptsReturn="True"/>
+
+            <Button Content="Сохранить" Click="SaveClientButton_Click" Style="{StaticResource RoundedButtonStyle}" Margin="0,20,0,0" Height="40" Width="150" Background="#000000" Foreground="#E8DBC4"/>
+        </StackPanel>
+    </Grid>
+</Window>

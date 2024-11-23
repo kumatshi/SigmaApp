@@ -1,0 +1,15 @@
+﻿<Window x:Class="SigmaApp.ImageUploadWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Загрузка изображения" Height="250" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <StackPanel HorizontalAlignment="Center" Background="#561C24" VerticalAlignment="Center" Height="234" >
+
+            <Button Content="Выбрать изображение" Click="SelectImageButton_Click" Width="200" Height="30" Background="#E8DBC4"/>
+            <Image x:Name="SelectedImage" Width="381" Height="150" Margin="10"/>
+        </StackPanel>
+    </Grid>
+</Window>
